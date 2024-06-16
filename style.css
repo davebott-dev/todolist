@@ -1,0 +1,232 @@
+:root {  
+    --background: #FAF9F6;
+    --darkColor: #1F1206;
+    --lightColor: whitesmoke;
+    --btnColor: #00356B;
+    --btnHoverColor: #002147;
+    --delBtnColor: darkred;
+    --cardColor: #ebebeb;
+    --cardHoverColor: #dbdbdb
+  }
+  
+  html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    width: 65%;
+    min-height: 400px;
+    min-width: 450px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    background: var(--darkColor);
+    color: var(--lightColor);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    min-width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .projectHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  #taskBtn {
+    height: 40px;
+    width: 90px;
+    background: var(--btnColor);
+    color: var(--lightColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #taskBtn:hover {
+    background: var(--btnHoverColor);
+  }
+  
+  .projectBtn {
+    height: 13px;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+  
+  .projectCards {
+    display: flex;
+    flex-direction: column;
+    max-height: 215px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    gap: 5px;
+  }
+  
+  #default,
+  #work,
+  #personal,
+  #school,
+  .newProject {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    min-height: 40px;
+    border: none;
+    background: var(--cardColor);
+    font-size: 14px;
+    max-width: 250px;
+  }
+  
+  #default:hover,
+  #work:hover,
+  #personal:hover,
+  #school:hover,
+  .newProject:hover {
+    background: var(--cardHoverColor);
+  }
+  
+  #default:focus,
+  #work:focus,
+  #personal:focus,
+  #school:focus,
+  .newProject:focus {
+    background: var(--cardHoverColor);
+  }
+  
+  #default:disabled,
+  #work:disabled,
+  #personal:disabled,
+  #school:disabled {
+    color: var(--darkColor);
+  }
+  
+  .newProjectTitle {
+    max-width: 100px;
+    border: none;
+    background: var(--cardColor);
+  }
+  
+  .newProjectTitle:hover {
+    background: var(--cardHoverColor);
+  }
+  
+  .newProjectTitle:focus {
+    outline: none;
+  }
+  
+  form {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 15px;
+  
+    border-radius: 15px;
+    min-height: max-content;
+    width: 35%;
+    min-width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .formHeader {
+    background: var(--darkColor);
+    color: var(--lightColor);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .formElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .middleRow {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  
+  .task {
+    width: 100%;
+  }
+  
+  .taskCards {
+    display: flex;
+    flex-direction: column;
+    max-height: 215px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    gap: 5px;
+  }
+  
+  .cards {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    min-height: 40px;
+    border: none;
+    background: var(--cardColor);
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .closeIcon,
+  .editIcon {
+    width: 15px;
+    cursor: pointer;
+  }
+  
+  .iconDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
